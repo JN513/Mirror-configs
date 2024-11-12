@@ -1,0 +1,14 @@
+Status: active
+
+     To                         Action      From
+     --                         ------      ----
+[ 1] 22/tcp                     ALLOW IN    Anywhere
+[ 2] Nginx Full                 ALLOW IN    Anywhere
+[ 3] 443                        ALLOW IN    Anywhere
+[ 4] 873                        ALLOW IN    Anywhere
+[ 5] 443/udp                    ALLOW IN    Anywhere
+[ 6] 22/tcp (v6)                ALLOW IN    Anywhere (v6)
+[ 7] Nginx Full (v6)            ALLOW IN    Anywhere (v6)
+[ 8] 443 (v6)                   ALLOW IN    Anywhere (v6)
+[ 9] 873 (v6)                   ALLOW IN    Anywhere (v6)
+[10] 443/udp (v6)               ALLOW IN    Anywhere (v6)

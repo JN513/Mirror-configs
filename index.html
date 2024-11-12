@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirror IC Unicamp</title>
+</head>
+<body>
+    <h1>Mirror IC Unicamp</h1>
+
+    <p>Bem-vindo ao espelho de pacotes do Instituto de Computação da UNICAMP.</p>
+
+    <!-- Esquema de diretórios -->
+    <h2>Esquema de Diretórios</h2>
+
+    <a href="../">../</a><br><!-- Link para o diretório pai -->
+	<a href="./debian">/debian/</a><br>
+	<a href="./debian-cd">/debian-cd/</a><br>
+	<a href="./archlinux">/archlinux/</a><br>
+	<a href="./ubuntu">/ubuntu/</a><br>
+	<a href="./rocky">/rocky/</a><br>
+
+
+    <h2>Sobre o Mirror</h2>
+    <p>Este mirror é atualizado automaticamente quatro vezes ao dia para o Debian, uma vez a cada hora para o Arch Linux, duas vezes ao dia para o Ubuntu e seis vezes ao dia pra Rocky Linux, garantindo que você tenha acesso às versões mais recentes dos pacotes.</p>
+    <p>Por favor, use-o de forma responsável e reporte quaisquer problemas para o e-mail de contato abaixo.</p>
+
+    <h2>Distribuições Disponíveis</h2>
+    <ul>
+        <li><a href="./debian">Debian</a></li>
+        <li><a href="./archlinux">Arch Linux</a></li>
+    	<li><a href="./ubuntu">Ubuntu</a></li>
+	<li><a href="./rocky">Rocky Linux</a></li>
+    </ul>
+
+    <h2>Informações de Contato</h2>
+    <p>Se você tiver alguma dúvida ou problema, entre em contato através do e-mail:
+    <a href="mailto:julio.avelar@students.ic.unicamp.br">julio.avelar@students.ic.unicamp.br</a>.</p>
+    <p>Os avisos referentes ao mirror ficarão disponíveis na lista de emails: <a href="https://lists.sr.ht/~julioavelar/Mirrors_IC_UNICAMP">https://lists.sr.ht/~julioavelar/Mirrors_IC_UNICAMP</a>.</p>
+
+    <h2>Informações sobre a Infraestrutura</h2>
+    <p>Este mirror é hospedado em servidores com largura de banda de 1 Gbps e é mantido por alunos do Instituto de Computação de forma voluntária.</p>
+
+    <h2>Responsáveis pelo Mirror</h2>
+    <p>Este mirror é mantido por:</p>
+    <ul>
+        <li>Julio Avelar - <a href="mailto:julio.avelar@students.ic.unicamp.br">julio.avelar@students.ic.unicamp.br</a></li>
+        <li>Charles Melara - <a href="mailto:charles@debian.org">charles@debian.org</a></li>
+        <li>Vinicius Peixoto - <a href="mailto:mirror@nukelet.com">mirror@nukelet.com</a></li>
+        <li>Enzo Pacheco - <a href="mailto:enzo.bertoloti@students.ic.unicamp.br">enzo.bertoloti@students.ic.unicamp.br</a></li>
+	<li>Gabriel Soares - <a href="mailto:g.soares@ifpeopensource.com.br">g.soares@ifpeopensource.com.br</a></li>
+    </ul>
+
+    <h2>Como utilizar o Mirror</h2>
+    <h3>Arch Linux</h3>
+    <p>Adicione a seguinte linha no começo do arquivo <strong>/etc/pacman.d/mirrorlist</strong>:</p>
+	<p>Server = https://mirrors.ic.unicamp.br/archlinux/$repo/os/$arch</p>
+    <h3>Debian</h3>
+    <p>Modifique a seguinte linha no arquivo <strong>/etc/apt/source.list</strong>:</p>
+	<p>deb http://ftp.br.debian.org/debian/ bookworm main non-free-firmware</p>
+    <p>para:</p>
+    <p>deb http://mirrors.ic.unicamp.br/debian/ bookworm main non-free-firmware</p>
+
+    <h2>Notificações e Avisos</h2>
+    <p><strong>Aviso:</strong> Sem avisos por enquanto :)</p>
+
+    <h2>Outros Mirrors Disponíveis</h2>
+    <ul>
+        <li><a href="https://www.debian.org/mirror/list">Lista de Mirrors Debian</a></li>
+        <li><a href="https://archlinux.org/mirrors/">Lista de Mirrors Arch Linux</a></li>
+    </ul>
+
+    <h2>Apoio</h2>
+    <ul>
+	<li>Instituto de Computação UNICAMP</li>
+    	<li>Laboratório de Sistemas de Computação</li>
+    	<li>Debian</li>
+    </ul>
+</body>
+</html>

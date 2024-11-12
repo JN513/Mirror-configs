@@ -1,0 +1,8 @@
+SHELL=/bin/bash
+16 * * * * /bin/bash /mnt/mirror/syncarchrepo.sh
+
+0 0,6,12,18 * * * /mnt/mirror/archvsync/bin/ftpsync
+
+2 */12 * * * /mnt/mirror/ubuntu_mirrorbuild.sh
+
+50 */6  * * * /mnt/mirror/rocky_mirrorsync.sh > /dev/null 2>&1
